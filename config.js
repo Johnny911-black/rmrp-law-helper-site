@@ -6,7 +6,7 @@ window.SITE_CONFIG = {
   /** Версия приложения на сайте (пока нет Release на GitHub — или как fallback) */
   appVersion: '1.0',
   /** Имя portable-файла в GitHub Releases (как в electron-builder) */
-  exeFileName: 'RMRP Law Helper.exe',
+  exeFileName: 'RMRP.LAW.HELPER.zip',
   /** Горячая клавиша по умолчанию в приложении */
   defaultHotkey: 'F9',
   /** ID видео на YouTube (из ссылки youtube.com/watch?v=XXXXXXXX) */
