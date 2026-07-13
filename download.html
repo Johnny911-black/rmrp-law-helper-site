@@ -10,113 +10,94 @@
 </head>
 <body data-page="download">
   <main>
-    <div class="page-head container reveal">
-      <h1>Скачать</h1>
-      <p>Windows 10/11 · без аккаунта · без сбора данных. Версия <strong data-version>…</strong></p>
-    </div>
-
     <section class="section download-hero-section">
       <div class="container download-hero-container">
-        <div class="download-hero reveal">
+        <article class="download-hero reveal">
           <div class="download-hero-glow" aria-hidden="true"></div>
           <div class="download-hero-icon" aria-hidden="true">⚖</div>
-          <div class="download-hero-badges">
-            <span class="download-hero-badge">Windows 10/11</span>
-            <span class="download-hero-badge">v<strong data-version>…</strong></span>
-            <span class="download-hero-badge">Бесплатно</span>
-          </div>
-          <h2 class="download-hero-title">Установщик для Windows</h2>
-          <p class="download-hero-lead">
-            Автообновления из приложения, откат версии в настройках.
-            Запуск от администратора — для биндера и патруля.
+          <h1 class="download-hero-title">RMRP Law Helper</h1>
+          <p class="download-hero-subtitle">
+            Windows 10/11 · версия <strong data-version>…</strong> · бесплатно
           </p>
-          <ul class="download-hero-features">
-            <li>Автообновление через GitHub Releases</li>
-            <li>Откат на прошлую версию в один клик</li>
-            <li>Без аккаунта и сбора данных</li>
-          </ul>
+          <p class="download-hero-lead">
+            Один установщик — законы, биндер и патруль поверх игры.
+            Окно по <strong data-hotkey>F9</strong>, иконка в трее.
+          </p>
           <div class="download-hero-actions">
             <a class="btn btn-primary btn-lg setup-download-link download-hero-btn" id="download-setup-btn" href="#">
               <span class="download-hero-btn-icon" aria-hidden="true">↓</span>
-              Скачать Setup.exe
+              Скачать для Windows
             </a>
           </div>
+          <p class="download-hero-note">
+            При обновлении настройки, бинды и закладки сохраняются.
+          </p>
           <p class="download-hero-file" id="download-setup-filename" hidden>
             Файл: <code></code>
           </p>
           <div class="download-hero-links">
-            <a class="btn btn-ghost btn-sm github-link" id="github-btn" href="#" target="_blank" rel="noopener">Все релизы на GitHub</a>
+            <a class="btn btn-ghost btn-sm github-link" id="github-btn" href="#" target="_blank" rel="noopener">GitHub Releases</a>
             <a class="btn btn-ghost btn-sm" href="updates.html">История версий</a>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <h2 class="section-title reveal">Установка</h2>
-        <div class="steps">
-          <article class="step reveal">
-            <div class="step-num">1</div>
-            <h3>Скачайте</h3>
-            <p>Загрузите Setup.exe с этой страницы или с GitHub Releases.</p>
-          </article>
-          <article class="step reveal">
-            <div class="step-num">2</div>
-            <h3>Установите</h3>
-            <p>
-              Запустите установщик. При предупреждении SmartScreen: «Подробнее» → «Выполнить».
-              Подтвердите запрос UAC — приложению нужны права администратора для биндера.
-            </p>
-          </article>
-          <article class="step reveal">
-            <div class="step-num">3</div>
-            <h3>Играйте</h3>
-            <p>
-              Иконка появится в трее. <strong data-hotkey>F9</strong> — показать или скрыть окно.
-              Биндер работает в фоне.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title reveal">Системные требования</h2>
-        <div class="features-grid">
-          <article class="feature-card reveal">
-            <h3>ОС</h3>
-            <p>Windows 10 или 11 (64-bit)</p>
-          </article>
-          <article class="feature-card reveal">
-            <h3>Права</h3>
-            <p>Запуск от администратора (запрашивается при старте)</p>
-          </article>
-          <article class="feature-card reveal">
-            <h3>Интернет</h3>
-            <p>Для первого обновления законов и автообновления приложения</p>
-          </article>
-          <article class="feature-card reveal">
-            <h3>Место</h3>
-            <p>~130–200 МБ на диске</p>
-          </article>
-        </div>
+    <section class="section section-alt download-details">
+      <div class="container download-details-grid">
+        <article class="download-panel reveal">
+          <h2 class="download-panel-title">Установка</h2>
+          <ol class="download-steps">
+            <li>
+              <span class="download-step-label">Скачайте и запустите Setup.exe</span>
+              <span class="download-step-hint">При SmartScreen: «Подробнее» → «Выполнить»</span>
+            </li>
+            <li>
+              <span class="download-step-label">Подтвердите UAC</span>
+              <span class="download-step-hint">Права администратора нужны для биндера и патруля</span>
+            </li>
+            <li>
+              <span class="download-step-label">Готово</span>
+              <span class="download-step-hint">Приложение в трее, биндер работает в фоне</span>
+            </li>
+          </ol>
+        </article>
+        <article class="download-panel reveal">
+          <h2 class="download-panel-title">Требования</h2>
+          <dl class="download-specs">
+            <div>
+              <dt>ОС</dt>
+              <dd>Windows 10 или 11 (64-bit)</dd>
+            </div>
+            <div>
+              <dt>Права</dt>
+              <dd>Запуск от администратора</dd>
+            </div>
+            <div>
+              <dt>Интернет</dt>
+              <dd>Для законов и автообновления</dd>
+            </div>
+            <div>
+              <dt>Место на диске</dt>
+              <dd>~130–200 МБ</dd>
+            </div>
+          </dl>
+        </article>
       </div>
     </section>
 
     <section class="container">
       <div class="cta-banner reveal">
         <h2>Нужна помощь?</h2>
-        <p>Смотрите раздел FAQ или Issues на GitHub.</p>
+        <p>Ответы на частые вопросы и контакт автора — в FAQ.</p>
         <a class="btn btn-ghost" href="faq.html">Частые вопросы</a>
       </div>
     </section>
   </main>
 
-  <script src="config.js"></script>
+  <script src="config.js?v=3"></script>
   <script src="js/layout.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
   <script src="js/animations.js"></script>
 </body>
 </html>

@@ -51,10 +51,21 @@
     return;
   }
 
+  const releaseTag = cached || (fallbackVersion ? formatReleaseTag(fallbackVersion) : 'latest');
+  if (fallbackSetupName) {
+    applySetupDownload(
+      buildReleaseDownloadUrl(releaseTag, fallbackSetupName),
+      toGitHubAssetName(fallbackSetupName),
+    );
+  }
+
   fetch(apiUrl, { headers: { Accept: 'application/vnd.github+json' } })
     .then((res) => (res.ok ? res.json() : null))
     .then((data) => {
-      if (!data) return;
+      if (!data) {
+        applyFallbackDownload(releaseTag);
+        return;
+      }
 
       if (data.tag_name) {
         writeVersionCache(data.tag_name);
@@ -67,15 +78,11 @@
         return;
       }
 
-      if (fallbackSetupName) {
-        applySetupDownload(`${releasesUrl}/latest/download/${encodeURIComponent(fallbackSetupName)}`, fallbackSetupName);
-      }
+      applyFallbackDownload(data.tag_name || releaseTag);
     })
     .catch(() => {
       if (!fallbackVersion && !cached && versionEl) versionEl.textContent = 'Releases';
-      if (fallbackSetupName) {
-        applySetupDownload(`${releasesUrl}/latest/download/${encodeURIComponent(fallbackSetupName)}`, fallbackSetupName);
-      }
+      applyFallbackDownload(releaseTag);
     });
 
   function findSetupAsset(assets) {
@@ -112,6 +119,31 @@
       filenameCode.textContent = filename;
       filenameBlock.hidden = false;
     }
+  }
+
+  function applyFallbackDownload(tag) {
+    if (!fallbackSetupName) return;
+    applySetupDownload(
+      buildReleaseDownloadUrl(tag, fallbackSetupName),
+      toGitHubAssetName(fallbackSetupName),
+    );
+  }
+
+  /** GitHub заменяет пробелы в имени файла на точки при загрузке в Release. */
+  function toGitHubAssetName(filename) {
+    return String(filename).replace(/\s+/g, '.');
+  }
+
+  function formatReleaseTag(version) {
+    const value = String(version).trim();
+    if (!value) return 'latest';
+    return /^v/i.test(value) ? value : `v${value}`;
+  }
+
+  function buildReleaseDownloadUrl(tag, filename) {
+    const assetName = toGitHubAssetName(filename);
+    const urlTag = formatReleaseTag(tag);
+    return `${repoUrl}/releases/download/${urlTag}/${encodeURIComponent(assetName)}`;
   }
 
   function normalizeVersion(tag) {
