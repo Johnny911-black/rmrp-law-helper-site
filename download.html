@@ -15,21 +15,38 @@
       <p>Windows 10/11 · без аккаунта · без сбора данных. Версия <strong data-version>…</strong></p>
     </div>
 
-    <section class="section">
-      <div class="container download-options download-options--single">
-        <article class="download-card download-card--primary reveal">
-          <h2>Установщик</h2>
-          <p>Автообновления из приложения, откат на прошлую версию в настройках. Запуск с правами администратора — для работы биндера и патруля.</p>
-          <a class="btn btn-primary setup-download-link" id="download-setup-btn" href="#">Скачать Setup.exe</a>
-          <p class="download-card-note">Файл: <code class="setup-file-label">RMRP Law Helper-Setup.exe</code></p>
-        </article>
-      </div>
-
-      <div class="container reveal" style="text-align: center; margin-top: 20px;">
-        <a class="btn btn-ghost github-link" id="github-btn" href="#" target="_blank" rel="noopener">Все релизы на GitHub</a>
-        <p class="hero-note" style="margin-top: 14px;">
-          История версий — на странице <a href="updates.html">Обновления</a>.
-        </p>
+    <section class="section download-hero-section">
+      <div class="container">
+        <div class="download-hero reveal">
+          <div class="download-hero-glow" aria-hidden="true"></div>
+          <div class="download-hero-icon" aria-hidden="true">⚖</div>
+          <div class="download-hero-badges">
+            <span class="download-hero-badge">Windows 10/11</span>
+            <span class="download-hero-badge">v<strong data-version>…</strong></span>
+            <span class="download-hero-badge">Бесплатно</span>
+          </div>
+          <h2 class="download-hero-title">Установщик для Windows</h2>
+          <p class="download-hero-lead">
+            Автообновления из приложения, откат версии в настройках.
+            Запуск от администратора — для биндера и патруля.
+          </p>
+          <ul class="download-hero-features">
+            <li>Автообновление через GitHub Releases</li>
+            <li>Откат на прошлую версию в один клик</li>
+            <li>Без аккаунта и сбора данных</li>
+          </ul>
+          <a class="btn btn-primary btn-lg setup-download-link download-hero-btn" id="download-setup-btn" href="#">
+            <span class="download-hero-btn-icon" aria-hidden="true">↓</span>
+            Скачать Setup.exe
+          </a>
+          <p class="download-hero-file">
+            Файл: <code class="setup-file-label">RMRP Law Helper-Setup.exe</code>
+          </p>
+          <div class="download-hero-links">
+            <a class="btn btn-ghost btn-sm github-link" id="github-btn" href="#" target="_blank" rel="noopener">Все релизы на GitHub</a>
+            <a class="btn btn-ghost btn-sm" href="updates.html">История версий</a>
+          </div>
+        </div>
       </div>
     </section>
 
