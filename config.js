@@ -5,9 +5,7 @@ window.SITE_CONFIG = {
   githubRepo: 'rmrp-law-helper',
   /** Версия приложения на сайте (пока нет Release на GitHub — или как fallback) */
   appVersion: '1.0',
-  /** Имя portable-zip в GitHub Releases */
-  exeFileName: 'RMRP.LAW.HELPER.zip',
-  /** Имя установщика для автообновления (Setup.exe + latest.yml в Release) */
+  /** Имя установщика в GitHub Releases (Setup.exe + latest.yml для автообновления) */
   setupFileName: 'RMRP Law Helper-Setup-1.0.0.exe',
   /** Горячая клавиша по умолчанию в приложении */
   defaultHotkey: 'F9',
