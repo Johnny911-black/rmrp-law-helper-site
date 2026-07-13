@@ -2,15 +2,13 @@
   const cfg = window.SITE_CONFIG || {};
   const user = cfg.githubUser || 'YOUR_GITHUB_USERNAME';
   const repo = cfg.githubRepo || 'rmrp-law-helper';
-  const exe = encodeURIComponent(cfg.exeFileName || 'RMRP Law Helper.exe');
-  const setup = encodeURIComponent(cfg.setupFileName || '');
+  const setup = encodeURIComponent(cfg.setupFileName || 'RMRP Law Helper-Setup.exe');
   const hotkey = cfg.defaultHotkey || 'F9';
   const fallbackVersion = String(cfg.appVersion || '').trim();
 
   const repoUrl = `https://github.com/${user}/${repo}`;
   const releasesUrl = `${repoUrl}/releases`;
-  const downloadUrl = `${repoUrl}/releases/latest/download/${exe}`;
-  const setupDownloadUrl = setup ? `${repoUrl}/releases/latest/download/${setup}` : releasesUrl;
+  const setupDownloadUrl = `${repoUrl}/releases/latest/download/${setup}`;
   const apiUrl = `https://api.github.com/repos/${user}/${repo}/releases/latest`;
 
   document.querySelectorAll('[data-hotkey]').forEach((el) => {
@@ -18,14 +16,17 @@
   });
 
   const isConfigured = user !== 'YOUR_GITHUB_USERNAME';
-  const finalDownloadUrl = isConfigured ? downloadUrl : releasesUrl;
-
-  document.querySelectorAll('.download-link, #download-btn, #download-btn-footer').forEach((el) => {
-    el.href = finalDownloadUrl;
-  });
 
   document.querySelectorAll('.setup-download-link, #download-setup-btn').forEach((el) => {
-    el.href = isConfigured && setup ? setupDownloadUrl : releasesUrl;
+    el.href = isConfigured ? setupDownloadUrl : releasesUrl;
+  });
+
+  document.querySelectorAll('.download-link, #download-btn-footer').forEach((el) => {
+    const href = (el.getAttribute('href') || '').trim();
+    if (href.endsWith('download.html')) {
+      return;
+    }
+    el.href = isConfigured ? setupDownloadUrl : releasesUrl;
   });
 
   const setupLabel = document.querySelector('.setup-file-label');
@@ -33,8 +34,12 @@
     setupLabel.textContent = cfg.setupFileName;
   }
 
-  document.querySelectorAll('.github-link, #github-btn').forEach((el) => {
+  document.querySelectorAll('.github-link').forEach((el) => {
     el.href = repoUrl;
+  });
+
+  document.querySelectorAll('#github-btn, .github-releases-link').forEach((el) => {
+    el.href = isConfigured ? releasesUrl : repoUrl;
   });
 
   const versionEl = document.getElementById('latest-version');
