@@ -3,7 +3,6 @@
   const pages = [
     { id: 'home', href: 'index.html', label: 'Главная' },
     { id: 'features', href: 'features.html', label: 'Возможности' },
-    { id: 'download', href: 'download.html', label: 'Скачать' },
     { id: 'updates', href: 'updates.html', label: 'Обновления' },
     { id: 'faq', href: 'faq.html', label: 'FAQ' },
   ];
