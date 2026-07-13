@@ -5,8 +5,8 @@ window.SITE_CONFIG = {
   githubRepo: 'rmrp-law-helper',
   /** Версия приложения на сайте (пока нет Release на GitHub — или как fallback) */
   appVersion: '1.0',
-  /** Имя установщика в GitHub Releases (Setup.exe + latest.yml для автообновления) */
-  setupFileName: 'RMRP Law Helper-Setup-1.0.0.exe',
+  /** Имя установщика — подставляется автоматически из GitHub Releases (fallback, если API недоступен) */
+  setupFileName: '',
   /** Горячая клавиша по умолчанию в приложении */
   defaultHotkey: 'F9',
   /** ID видео на YouTube (из ссылки youtube.com/watch?v=XXXXXXXX) */

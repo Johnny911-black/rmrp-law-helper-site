@@ -2,13 +2,12 @@
   const cfg = window.SITE_CONFIG || {};
   const user = cfg.githubUser || 'YOUR_GITHUB_USERNAME';
   const repo = cfg.githubRepo || 'rmrp-law-helper';
-  const setup = encodeURIComponent(cfg.setupFileName || 'RMRP Law Helper-Setup.exe');
   const hotkey = cfg.defaultHotkey || 'F9';
   const fallbackVersion = String(cfg.appVersion || '').trim();
+  const fallbackSetupName = String(cfg.setupFileName || '').trim();
 
   const repoUrl = `https://github.com/${user}/${repo}`;
   const releasesUrl = `${repoUrl}/releases`;
-  const setupDownloadUrl = `${repoUrl}/releases/latest/download/${setup}`;
   const apiUrl = `https://api.github.com/repos/${user}/${repo}/releases/latest`;
 
   document.querySelectorAll('[data-hotkey]').forEach((el) => {
@@ -17,8 +16,10 @@
 
   const isConfigured = user !== 'YOUR_GITHUB_USERNAME';
 
+  let setupDownloadUrl = releasesUrl;
+
   document.querySelectorAll('.setup-download-link, #download-setup-btn').forEach((el) => {
-    el.href = isConfigured ? setupDownloadUrl : releasesUrl;
+    el.href = setupDownloadUrl;
   });
 
   document.querySelectorAll('.download-link, #download-btn-footer').forEach((el) => {
@@ -26,13 +27,8 @@
     if (href.endsWith('download.html')) {
       return;
     }
-    el.href = isConfigured ? setupDownloadUrl : releasesUrl;
+    el.href = setupDownloadUrl;
   });
-
-  const setupLabel = document.querySelector('.setup-file-label');
-  if (setupLabel && cfg.setupFileName) {
-    setupLabel.textContent = cfg.setupFileName;
-  }
 
   document.querySelectorAll('.github-link').forEach((el) => {
     el.href = repoUrl;
@@ -43,6 +39,9 @@
   });
 
   const versionEl = document.getElementById('latest-version');
+  const filenameBlock = document.getElementById('download-setup-filename');
+  const filenameCode = filenameBlock?.querySelector('code');
+
   const cached = tryReadVersionCache();
   if (fallbackVersion) applyVersion(fallbackVersion);
   else if (cached) applyVersion(cached);
@@ -55,13 +54,65 @@
   fetch(apiUrl, { headers: { Accept: 'application/vnd.github+json' } })
     .then((res) => (res.ok ? res.json() : null))
     .then((data) => {
-      if (!data?.tag_name) return;
-      writeVersionCache(data.tag_name);
-      applyVersion(normalizeVersion(data.tag_name));
+      if (!data) return;
+
+      if (data.tag_name) {
+        writeVersionCache(data.tag_name);
+        applyVersion(normalizeVersion(data.tag_name));
+      }
+
+      const asset = findSetupAsset(data.assets);
+      if (asset?.browser_download_url) {
+        applySetupDownload(asset.browser_download_url, asset.name);
+        return;
+      }
+
+      if (fallbackSetupName) {
+        applySetupDownload(`${releasesUrl}/latest/download/${encodeURIComponent(fallbackSetupName)}`, fallbackSetupName);
+      }
     })
     .catch(() => {
       if (!fallbackVersion && !cached && versionEl) versionEl.textContent = 'Releases';
+      if (fallbackSetupName) {
+        applySetupDownload(`${releasesUrl}/latest/download/${encodeURIComponent(fallbackSetupName)}`, fallbackSetupName);
+      }
     });
+
+  function findSetupAsset(assets) {
+    if (!Array.isArray(assets) || !assets.length) return null;
+
+    const sorted = [...assets].sort((a, b) => {
+      const aSetup = /setup/i.test(a.name);
+      const bSetup = /setup/i.test(b.name);
+      if (aSetup !== bSetup) return aSetup ? -1 : 1;
+      return 0;
+    });
+
+    return sorted.find((asset) => (
+      /\.exe$/i.test(asset.name)
+      && !/uninstall/i.test(asset.name)
+      && !/blockmap/i.test(asset.name)
+    )) || null;
+  }
+
+  function applySetupDownload(url, filename) {
+    setupDownloadUrl = url;
+
+    document.querySelectorAll('.setup-download-link, #download-setup-btn').forEach((el) => {
+      el.href = url;
+    });
+
+    document.querySelectorAll('.download-link, #download-btn-footer').forEach((el) => {
+      const href = (el.getAttribute('href') || '').trim();
+      if (href.endsWith('download.html')) return;
+      el.href = url;
+    });
+
+    if (filename && filenameBlock && filenameCode) {
+      filenameCode.textContent = filename;
+      filenameBlock.hidden = false;
+    }
+  }
 
   function normalizeVersion(tag) {
     return String(tag).replace(/^v/i, '');

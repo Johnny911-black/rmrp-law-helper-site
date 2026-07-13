@@ -16,7 +16,7 @@
     </div>
 
     <section class="section download-hero-section">
-      <div class="container">
+      <div class="container download-hero-container">
         <div class="download-hero reveal">
           <div class="download-hero-glow" aria-hidden="true"></div>
           <div class="download-hero-icon" aria-hidden="true">⚖</div>
@@ -35,12 +35,14 @@
             <li>Откат на прошлую версию в один клик</li>
             <li>Без аккаунта и сбора данных</li>
           </ul>
-          <a class="btn btn-primary btn-lg setup-download-link download-hero-btn" id="download-setup-btn" href="#">
-            <span class="download-hero-btn-icon" aria-hidden="true">↓</span>
-            Скачать Setup.exe
-          </a>
-          <p class="download-hero-file">
-            Файл: <code class="setup-file-label">RMRP Law Helper-Setup.exe</code>
+          <div class="download-hero-actions">
+            <a class="btn btn-primary btn-lg setup-download-link download-hero-btn" id="download-setup-btn" href="#">
+              <span class="download-hero-btn-icon" aria-hidden="true">↓</span>
+              Скачать Setup.exe
+            </a>
+          </div>
+          <p class="download-hero-file" id="download-setup-filename" hidden>
+            Файл: <code></code>
           </p>
           <div class="download-hero-links">
             <a class="btn btn-ghost btn-sm github-link" id="github-btn" href="#" target="_blank" rel="noopener">Все релизы на GitHub</a>
