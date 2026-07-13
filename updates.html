@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обновления — RMRP Law Helper</title>
+  <meta name="description" content="История версий RMRP Law Helper и автоматические обновления приложения." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="updates">
+  <main>
+    <div class="page-head container reveal">
+      <h1>Обновления</h1>
+      <p>История версий подгружается из GitHub Releases. После установки Setup.exe приложение предлагает обновиться само.</p>
+    </div>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="updates-info-grid reveal">
+          <article class="updates-info-card">
+            <h2>Автообновление</h2>
+            <p>Установите приложение через Setup.exe — при выходе новой версии появится окно с загрузкой и установкой.</p>
+          </article>
+          <article class="updates-info-card">
+            <h2>Откат версии</h2>
+            <p>Перед обновлением сохраняется резервная копия. В настройках приложения можно вернуться на предыдущую версию.</p>
+          </article>
+          <article class="updates-info-card">
+            <h2>Portable zip</h2>
+            <p>Архив обновляется вручную — скачайте новый релиз с GitHub и замените файлы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="updates-latest reveal">
+          <span class="updates-latest-label">Актуальная версия</span>
+          <strong class="updates-latest-version" data-version>…</strong>
+          <a class="btn btn-primary btn-sm download-link" href="download.html">Скачать</a>
+        </div>
+
+        <h2 class="section-title reveal" style="margin-top: 40px;">История версий</h2>
+        <div id="changelog-root" class="changelog-list" aria-live="polite">
+          <p class="changelog-status">Загрузка…</p>
+        </div>
+        <p class="changelog-footnote reveal">
+          Полный список и файлы — на <a class="github-releases-link" href="#">GitHub Releases</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/changelog.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

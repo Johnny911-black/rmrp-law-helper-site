@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Возможности — RMRP Law Helper</title>
+  <meta name="description" content="Подробное описание функций RMRP Law Helper: законы, биндер, патруль, overlay." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="features">
+  <main>
+    <div class="page-head container reveal">
+      <h1>Возможности</h1>
+      <p>Подробный обзор модулей приложения — от поиска по УК до автодокладов на патруле. Нажмите на скриншот для увеличения.</p>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <article class="feature-block reveal" id="laws">
+          <div class="feature-block-text">
+            <span class="tag">Законодательство</span>
+            <h2>Все законы с форума</h2>
+            <p>
+              Актуальное законодательство RMRP с официального форума: УК, КоАП, УПК, Конституция, трудовой и другие кодексы.
+              Данные кэшируются локально и обновляются с форума — можно работать офлайн после первой загрузки.
+            </p>
+            <ul class="feature-list">
+              <li>Fuzzy-поиск: «ст 105», «УПК 186», текст, наказание</li>
+              <li>Вкладки документов — закрепите нужные кодексы</li>
+              <li>Режим «Полный текст» с подсветкой совпадений</li>
+              <li>Карточки статей с наказаниями и картинками</li>
+              <li>Перекрёстные ссылки между статьями</li>
+              <li>Закладки, отдельное окно, заметка к статье</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-laws.png" alt="Список законов и кодексов" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reverse reveal" id="rules">
+          <div class="feature-block-text">
+            <span class="tag">Правила сервера</span>
+            <h2>Все правила сервера с форума</h2>
+            <p>
+              Актуальные правила RMRP с официального форума: категории, документы, разделы и пункты.
+              Тот же поиск и закладки, что и в законах — переключение одной кнопкой в sidebar.
+            </p>
+            <ul class="feature-list">
+              <li>Иерархия: категория → документ → раздел → пункт</li>
+              <li>ПКМ по категории — полный текст, отдельное окно</li>
+              <li>Общие закладки и заметки для laws + rules</li>
+              <li>Сохранение позиции при переключении режимов</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-rules.png" alt="Правила сервера RMRP" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reveal" id="articles">
+          <div class="feature-block-text">
+            <span class="tag">Статьи</span>
+            <h2>Карточки с наказаниями</h2>
+            <p>
+              Статьи сгруппированы по главам. Видны наказания, звёзды розыска, части статьи.
+              Закрепление в профиль, добавление в свою подборку, открытие в отдельном окне.
+            </p>
+            <ul class="feature-list">
+              <li>Группировка по главам и кодексам</li>
+              <li>Закрепление главы или отдельной статьи</li>
+              <li>Умный поиск с подсветкой совпадений</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-article.png" alt="Карточки статей УК" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reverse reveal" id="binder">
+          <div class="feature-block-text">
+            <span class="tag">Биндер</span>
+            <h2>Макросы в чат по hotkey</h2>
+            <p>
+              Создайте текстовые бинды с горячими клавишами — отправка напрямую в чат GTA через native SendInput.
+              Несколько профилей биндов для разных ролей и персонажей.
+            </p>
+            <ul class="feature-list">
+              <li>Режимы «В чат» (Enter) и «Только вставить»</li>
+              <li>Плейсхолдеры: {fio}, {rank}, {org}, {time}, {date}</li>
+              <li>Панель биндов — мини-окно со списком поверх игры</li>
+              <li>Экспорт/импорт профиля кодом RMRP-BINDS-v1</li>
+              <li>Работает в фоне при скрытом главном окне</li>
+              <li>Native / hybrid / electron режимы hotkey</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-binder.png" alt="Биндер — профили и список биндов" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reveal" id="duty">
+          <div class="feature-block-text">
+            <span class="tag">Дежурство</span>
+            <h2>Пост и патруль</h2>
+            <p>
+              Для ГИБДД и похожих фракций: автоматические доклады с званием и ФИО из профиля,
+              учёт пола персонажа в формулировках, таймер до следующего доклада.
+            </p>
+            <ul class="feature-list">
+              <li>Старт смены — доклад в чат автоматически</li>
+              <li>Периодический доклад по интервалу (например, 10 мин)</li>
+              <li>Hotkey доклада и поддержки</li>
+              <li>Мини-overlay дежурства с таймерами</li>
+              <li>Звуковое напоминание «пора докладывать»</li>
+              <li>Завершение смены — финальный доклад</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-duty.png" alt="Пост и патруль" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reverse reveal" id="workspace">
+          <div class="feature-block-text">
+            <span class="tag">Workspace</span>
+            <h2>Закладки и заметки</h2>
+            <p>
+              Единый блокнот и закладки на статьи, главы и свои подборки.
+              Несколько профилей workspace — для разных персонажей.
+            </p>
+            <ul class="feature-list">
+              <li>Свои закладки-подборки для laws и rules</li>
+              <li>Выбор профиля при закреплении статьи</li>
+              <li>Исключение статей и частей из подборки</li>
+              <li>Экспорт кода RMRP-WORKSPACE-v1</li>
+              <li>Импорт в новый профиль без потери текущего</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-bookmarks.png" alt="Закладки и профили workspace" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reveal" id="notes">
+          <div class="feature-block-text">
+            <span class="tag">Заметки</span>
+            <h2>Блокнот для смены</h2>
+            <p>
+              Общий блокнот для всех разделов: номера, контакты, напоминания, выдержки из статей.
+              Закрепление заметки во вкладку, экспорт вместе с закладками через workspace.
+            </p>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-notes.png" alt="Заметки" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reverse reveal" id="maps">
+          <div class="feature-block-text">
+            <span class="tag">Карты</span>
+            <h2>Налёты и локации</h2>
+            <p>
+              Справочные карты RMRP: налёты, поставки, локации. Можно добавлять свои картинки
+              для быстрого просмотра поверх игры.
+            </p>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-maps.png" alt="Карты налётов и локаций" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reveal" id="overlay">
+          <div class="feature-block-text">
+            <span class="tag">Overlay</span>
+            <h2>Поверх игры</h2>
+            <p>
+              Окно always on top, изменение размера, ghost-режим (клики в игру),
+              глобальный hotkey показа/скрытия. Отдельные окна для статей.
+            </p>
+            <ul class="feature-list">
+              <li><span data-hotkey>F9</span> — показать/скрыть (настраивается)</li>
+              <li>Ghost на главном окне — только кнопка в шапке</li>
+              <li>Ghost на мини-панелях — hotkey + кнопка 👆</li>
+              <li>Клавиша чата GTA и hotkeys биндера в настройках</li>
+              <li>6 цветовых тем интерфейса</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-settings.png" alt="Настройки overlay и hotkeys" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reverse reveal" id="online">
+          <div class="feature-block-text">
+            <span class="tag">Онлайн</span>
+            <h2>Трекер времени в GTA</h2>
+            <p>
+              Отслеживание процесса GTA5.exe: время сегодня, текущая сессия,
+              streak дней подряд, графики за неделю.
+            </p>
+            <ul class="feature-list">
+              <li>Статус «В игре» / «GTA не запущен»</li>
+              <li>График активности по часам</li>
+              <li>Список сессий за день</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-online.png" alt="Онлайн-трекер GTA" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="cta-banner reveal">
+        <h2>Попробовать все функции</h2>
+        <p>Скачайте portable-версию для Windows.</p>
+        <a class="btn btn-primary download-link" href="download.html">Скачать</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
