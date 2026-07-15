@@ -20,7 +20,7 @@ window.SITE_CONFIG = {
    */
   downloadMirrors: {
     yandex: '',
-    google: '',
+    google: 'https://drive.google.com/drive/folders/1iHXi-Vzq5h3iWf2321PUiCIBbpUYuq03?usp=drive_link',
   },
   /** Страница скачивания (для ссылок из приложения при ошибке GitHub) */
   downloadPageUrl: 'https://Johnny911-black.github.io/rmrp-law-helper/download.html',
