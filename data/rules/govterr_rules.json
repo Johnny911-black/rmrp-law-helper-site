@@ -1,0 +1,310 @@
+[
+  {
+    "id": "govterr_1",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "1",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "1",
+        "text": "Правительство/ФСО"
+      }
+    ],
+    "keywords": [
+      "правительствофсо"
+    ],
+    "fullText": "Правительство/ФСО",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_1.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59317-7a3397f69bb5f1e78d452593a25d017c.jpg",
+        "alt": "Правительство/ФСО",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_2",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "2",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "2",
+        "text": "Федеральная служба безопасности"
+      }
+    ],
+    "keywords": [
+      "федеральная",
+      "служба",
+      "безопасности"
+    ],
+    "fullText": "Федеральная служба безопасности",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_2.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59318-b0523ac199828ba9e29568618dae1d01.jpg",
+        "alt": "Федеральная служба безопасности",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_3",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "3",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "3",
+        "text": "ЦГБ №3"
+      }
+    ],
+    "keywords": [],
+    "fullText": "ЦГБ №3",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_3.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59319-21e1ed189d149b89412b53f05166286e.jpg",
+        "alt": "ЦГБ №3",
+        "width": 1180,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_4",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "4",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "4",
+        "text": "ЦГБ №7"
+      }
+    ],
+    "keywords": [],
+    "fullText": "ЦГБ №7",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_4.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59330-57943a6f104e26f8c34023fafae8bc8a.jpg",
+        "alt": "ЦГБ №7",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_5",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "5",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "5",
+        "text": "УВД по ЦАО"
+      }
+    ],
+    "keywords": [],
+    "fullText": "УВД по ЦАО",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_5.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59324-d2673c33fdef6a528dcdee94e5b5b32f.jpg",
+        "alt": "УВД по ЦАО",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_6",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "6",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "6",
+        "text": "ГИБДД"
+      }
+    ],
+    "keywords": [
+      "гибдд"
+    ],
+    "fullText": "ГИБДД",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_6.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59323-8c9d5e8bdc331c7dfbbec0013a763cc1.jpg",
+        "alt": "ГИБДД",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_7",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "7",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "7",
+        "text": "ФСВНГ"
+      }
+    ],
+    "keywords": [
+      "фсвнг"
+    ],
+    "fullText": "ФСВНГ",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_7.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59331-b7950a8f4de1737990bef9f1a1f9650b.jpg",
+        "alt": "ФСВНГ",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_8",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "8",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "8",
+        "text": "Москва - Live"
+      }
+    ],
+    "keywords": [
+      "москва",
+      "live"
+    ],
+    "fullText": "Москва - Live",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_8.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59320-1c25fcdefcdefdd1a8f0edf9d39e7ada.jpg",
+        "alt": "Москва - Live",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_9",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "9",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "9",
+        "text": "ВС РФ"
+      }
+    ],
+    "keywords": [],
+    "fullText": "ВС РФ",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_9.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59322-e870e0db929e3ebb59df982951a0f8be.jpg",
+        "alt": "ВС РФ",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  },
+  {
+    "id": "govterr_10",
+    "contentType": "rule",
+    "docKey": "GOV_TERR",
+    "lawKey": "GOV_TERR",
+    "categoryKey": "GOV",
+    "code": "Титулы гос.",
+    "articleNumber": "10",
+    "title": "",
+    "section": "",
+    "chapter": "Глава 1. Титульные районы Государственных структур",
+    "parts": [
+      {
+        "partNumber": "10",
+        "text": "Федеральная служба исполнения наказаний"
+      }
+    ],
+    "keywords": [
+      "федеральная",
+      "служба",
+      "исполнения",
+      "наказаний"
+    ],
+    "fullText": "Федеральная служба исполнения наказаний",
+    "images": [
+      {
+        "url": "rmrp-cache:///maps/govterr/govterr_10.png",
+        "sourceUrl": "https://forum.rmrp.ru/data/attachments/59/59321-90e3ca4a293a602da6757b5b5c57ea9c.jpg",
+        "alt": "Федеральная служба исполнения наказаний",
+        "width": 1068,
+        "height": 600
+      }
+    ]
+  }
+]
