@@ -715,7 +715,7 @@
     for (const group of groups) {
       if (group.key !== groupKey) continue;
       for (const [ch, chapterItems] of group.chapters) {
-        if (ch !== chapter) return chapterItems;
+        if (ch === chapter) return chapterItems;
       }
     }
     return [];

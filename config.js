@@ -4,9 +4,9 @@ window.SITE_CONFIG = {
   githubUser: 'Johnny911-black',
   githubRepo: 'rmrp-law-helper',
   /** Версия приложения на сайте (пока нет Release на GitHub — или как fallback) */
-  appVersion: '1.0.6',
+  appVersion: '1.0.7',
   /** Fallback-имя Setup.exe в GitHub Release */
-  setupFileName: 'RMRP-Law-Helper-Setup-1.0.6.exe',
+  setupFileName: 'RMRP-Law-Helper-Setup-1.0.7.exe',
   /**
    * Постоянные зеркала (сайт НЕ нужно перезаливать при новом релизе).
    *
@@ -33,6 +33,12 @@ window.SITE_CONFIG = {
    * При нормальной работе список берётся из описания Releases автоматически.
    */
   changelogFallback: [
+    {
+      version: '1.0.7',
+      date: '2026-07-15T17:30:00Z',
+      title: 'RMRP Law Helper 1.0.7',
+      body: 'Критические исправления: настройки и бинды после обновления, кодовые слова в GTA, сайт.\n\n**Обновление**\n- Бинды и настройки хранятся в AppData — установщик больше не затирает config\n- Автоперенос старой папки config при первом запуске\n\n**Биндер**\n- Кодовые слова: та же схема, что в Windows (слово + пробел в уже открытом чате)\n- Цепочка из нескольких отправок в одном бинде\n\n**Сайт**\n- Исправлен просмотр всей главы (раньше показывалась чужая глава)\n- Hover у вкладок «Законы» / «Правила»',
+    },
     {
       version: '1.0.6',
       date: '2026-07-15T12:00:00Z',

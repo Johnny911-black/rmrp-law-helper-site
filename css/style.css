@@ -1435,11 +1435,19 @@ body.laws-page .site-footer { display: none; }
   font-size: 13px;
   padding: 8px 14px;
   border-radius: 8px;
-  cursor: default;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.laws-mode-btn:hover:not(.is-active) {
+  background: rgba(34, 211, 238, 0.1);
+  color: var(--accent-soft);
 }
 .laws-mode-btn.is-active {
   background: var(--accent-dim);
   color: var(--accent-soft);
+}
+.laws-mode-btn.is-active:hover {
+  background: rgba(34, 211, 238, 0.22);
 }
 
 .laws-controls {
