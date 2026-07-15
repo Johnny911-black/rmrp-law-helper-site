@@ -1,0 +1,19 @@
+{
+  "copiedAt": "2026-07-15T14:31:29.072Z",
+  "layout": "sharded",
+  "shards": [
+    "core",
+    "laws",
+    "rules"
+  ],
+  "articles": {
+    "lastUpdated": "2026-07-10T07:51:31.507Z",
+    "parserVersion": 5,
+    "totalArticles": 1190
+  },
+  "rules": {
+    "lastUpdated": "2026-07-11T07:54:53.757Z",
+    "parserVersion": 10,
+    "totalPoints": 889
+  }
+}

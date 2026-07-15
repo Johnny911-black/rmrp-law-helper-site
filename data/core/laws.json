@@ -1,0 +1,281 @@
+[
+  {
+    "key": "KONST",
+    "code": "Конституция",
+    "title": "Конституция Российской Федерации",
+    "url": "https://forum.rmrp.ru/threads/konstitucija-rossijskoj-federacii.58232/",
+    "profile": "generic",
+    "idPrefix": "konst",
+    "cacheFile": "konst_articles.json"
+  },
+  {
+    "key": "UK",
+    "code": "УК",
+    "title": "Уголовный Кодекс Российской Федерации",
+    "url": "https://forum.rmrp.ru/threads/ugolovnyj-kodeks-rossijskoj-federacii.58209/",
+    "profile": "uk",
+    "idPrefix": "uk",
+    "cacheFile": "uk_articles.json"
+  },
+  {
+    "key": "KOAP",
+    "code": "КоАП",
+    "title": "Кодекс об административных правонарушениях Российской Федерации",
+    "url": "https://forum.rmrp.ru/threads/kodeks-ob-administrativnyx-pravonarushenijax-rossijskoj-federacii.58229/",
+    "profile": "koap",
+    "idPrefix": "koap",
+    "cacheFile": "koap_articles.json"
+  },
+  {
+    "key": "PK",
+    "code": "ПК",
+    "title": "Процессуальный Кодекс Российской Федерации",
+    "url": "https://forum.rmrp.ru/threads/processualnyj-kodeks-rossijskoj-federacii.58424/",
+    "profile": "generic",
+    "idPrefix": "pk",
+    "cacheFile": "pk_articles.json"
+  },
+  {
+    "key": "UPK",
+    "code": "УПК",
+    "title": "Уголовно-процессуальный Кодекс Российской Федерации",
+    "url": "https://forum.rmrp.ru/threads/ugolovno-processualnyj-kodeks-rossijskoj-federacii.90218/",
+    "profile": "generic",
+    "idPrefix": "upk",
+    "cacheFile": "upk_articles.json"
+  },
+  {
+    "key": "TK",
+    "code": "ТК",
+    "title": "Трудовой Кодекс Российской Федерации",
+    "url": "https://forum.rmrp.ru/threads/trudovoj-kodeks-rossijskoj-federacii.25050/",
+    "profile": "generic",
+    "idPrefix": "tk",
+    "cacheFile": "tk_articles.json"
+  },
+  {
+    "key": "BK",
+    "code": "БК",
+    "title": "Бюджетный Кодекс Российской Федерации",
+    "url": "https://forum.rmrp.ru/threads/bjudzhetnyj-kodeks-rossijskoj-federacii.231508/",
+    "profile": "generic",
+    "idPrefix": "bk",
+    "cacheFile": "bk_articles.json"
+  },
+  {
+    "key": "IK",
+    "code": "ИК",
+    "title": "Избирательный Кодекс Российской Федерации",
+    "url": "https://forum.rmrp.ru/threads/izbiratelnyj-kodeks-rossijskoj-federacii.73525/",
+    "profile": "generic",
+    "idPrefix": "ik",
+    "cacheFile": "ik_articles.json"
+  },
+  {
+    "key": "FKZ2",
+    "code": "ФКЗ-2",
+    "title": "Федеральный конституционный закон «О Правительстве» №2-ФКЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-konstitucionnyj-zakon-o-pravitelstve-no2-fkz.25060/",
+    "profile": "generic",
+    "idPrefix": "fkz2",
+    "cacheFile": "fkz2_articles.json"
+  },
+  {
+    "key": "FKZ64",
+    "code": "ФКЗ-64",
+    "title": "Федеральный конституционный закон «О судебной системе» № 64-ФКЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-konstitucionnyj-zakon-o-sudebnoj-sisteme-no-64-fkz.36288/",
+    "profile": "generic",
+    "idPrefix": "fkz64",
+    "cacheFile": "fkz64_articles.json"
+  },
+  {
+    "key": "FKZ28",
+    "code": "ФКЗ-28",
+    "title": "Федеральный конституционный закон «Об особых правовых режимах» № 28-ФКЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-konstitucionnyj-zakon-ob-osobyx-pravovyx-rezhimax-no-28-fkz.25066/",
+    "profile": "generic",
+    "idPrefix": "fkz28",
+    "cacheFile": "fkz28_articles.json"
+  },
+  {
+    "key": "FZ10",
+    "code": "ФЗ-10",
+    "title": "Федеральный закон «О государственной тайне» №10-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-gosudarstvennoj-tajne-no10-fz.25062/",
+    "profile": "generic",
+    "idPrefix": "fz10",
+    "cacheFile": "fz10_articles.json"
+  },
+  {
+    "key": "ZT",
+    "code": "ЗТ",
+    "title": "Федеральный закон «О государственной собственности, закрытых и охраняемых территориях» № 86-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-gosudarstvennoj-sobstvennosti-zakrytyx-i-oxranjaemyx-territorijax-no-86-fz.26625/",
+    "profile": "generic",
+    "idPrefix": "zt",
+    "cacheFile": "zt_articles.json"
+  },
+  {
+    "key": "FZ18",
+    "code": "ФЗ-18",
+    "title": "Федеральный закон «О Федеральной службе войск национальной гвардии» № 18-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-federalnoj-sluzhbe-vojsk-nacionalnoj-gvardii-no-18-fz.25071/",
+    "profile": "generic",
+    "idPrefix": "fz18",
+    "cacheFile": "fz18_articles.json"
+  },
+  {
+    "key": "FZSMI",
+    "code": "ФЗ СМИ",
+    "title": "Федеральный Закон «О средствах массовой информации»",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-sredstvax-massovoj-informacii.25065/",
+    "profile": "textblock",
+    "idPrefix": "fzsmi",
+    "cacheFile": "fzsmi_articles.json"
+  },
+  {
+    "key": "FZ12",
+    "code": "ФЗ-12",
+    "title": "Федеральный закон «О коммерческой деятельности» № 12-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-kommercheskoj-dejatelnosti-no-12-fz-poslednjaja-redakcija.25064/",
+    "profile": "textblock",
+    "idPrefix": "fz12",
+    "cacheFile": "fz12_articles.json"
+  },
+  {
+    "key": "FZ95",
+    "code": "ФЗ-95",
+    "title": "Федеральный закон «О воздушном пространстве» № 95-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-vozdushnom-prostranstve-no-95-fz-poslednjaja-redakcija.25057/",
+    "profile": "textblock",
+    "idPrefix": "fz95",
+    "cacheFile": "fz95_articles.json"
+  },
+  {
+    "key": "FZ29",
+    "code": "ФЗ-29",
+    "title": "Федеральный закон «Об охране здоровья» № 29-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-ob-oxrane-zdorovja-no-29-fz-poslednjaja-redakcija.25070/",
+    "profile": "textblock",
+    "idPrefix": "fz29",
+    "cacheFile": "fz29_articles.json"
+  },
+  {
+    "key": "FZP",
+    "code": "ФЗП",
+    "title": "Федеральный закон «О полиции» № 74-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-policii-no-74-fz.25074/",
+    "profile": "generic",
+    "idPrefix": "fzp",
+    "cacheFile": "fzp_articles.json"
+  },
+  {
+    "key": "FZ99",
+    "code": "ФЗ-99",
+    "title": "Федеральный закон «Об организации дорожного движения» № 99-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-ob-organizacii-dorozhnogo-dvizhenija-no-99-fz.123012/",
+    "profile": "generic",
+    "idPrefix": "fz99",
+    "cacheFile": "fz99_articles.json"
+  },
+  {
+    "key": "FZ52",
+    "code": "ФЗ-52",
+    "title": "Федеральный закон «Об обороне» №52-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-ob-oborone-no52-fz.25072/",
+    "profile": "generic",
+    "idPrefix": "fz52",
+    "cacheFile": "fz52_articles.json"
+  },
+  {
+    "key": "FZ50",
+    "code": "ФЗ-50",
+    "title": "Федеральный закон «Об адвокатской деятельности и адвокатуре» № 50-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-ob-advokatskoj-dejatelnosti-i-advokature-no-50-fz.25059/",
+    "profile": "generic",
+    "idPrefix": "fz50",
+    "cacheFile": "fz50_articles.json"
+  },
+  {
+    "key": "PDD",
+    "code": "ПДД",
+    "title": "Федеральный закон «Правила дорожного движения» № 90-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-pravila-dorozhnogo-dvizhenija-no-90-fz.58190/",
+    "profile": "pdd",
+    "idPrefix": "pdd",
+    "cacheFile": "pdd_articles.json"
+  },
+  {
+    "key": "FZ66",
+    "code": "ФЗ-66",
+    "title": "Федеральный закон «Об учреждениях и органах исполнения уголовных наказаний» № 66-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-ob-uchrezhdenijax-i-organax-ispolnenija-ugolovnyx-nakazanij-no-66-fz.43086/",
+    "profile": "generic",
+    "idPrefix": "fz66",
+    "cacheFile": "fz66_articles.json"
+  },
+  {
+    "key": "FZ78",
+    "code": "ФЗ ФСБ",
+    "title": "Федеральный закон «О Федеральной службе безопасности» №78-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-federalnoj-sluzhbe-bezopasnosti-no78-fz.25073/",
+    "profile": "generic",
+    "idPrefix": "fz78",
+    "cacheFile": "fz78_articles.json"
+  },
+  {
+    "key": "FZ22",
+    "code": "ФЗ ФСО",
+    "title": "Федеральный закон «О Федеральной службе охраны» № 22-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-federalnoj-sluzhbe-oxrany-no-22-fz.25069/",
+    "profile": "generic",
+    "idPrefix": "fz22",
+    "cacheFile": "fz22_articles.json"
+  },
+  {
+    "key": "FZ54",
+    "code": "ФЗ-54",
+    "title": "Федеральный закон «О государственной службе» № 54-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-gosudarstvennoj-sluzhbe-no-54-fz.25075/",
+    "profile": "generic",
+    "idPrefix": "fz54",
+    "cacheFile": "fz54_articles.json"
+  },
+  {
+    "key": "FZ42",
+    "code": "ФЗ-42",
+    "title": "Федеральный закон «О документообороте» № 42-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-dokumentooborote-no-42-fz.25063/",
+    "profile": "generic",
+    "idPrefix": "fz42",
+    "cacheFile": "fz42_articles.json"
+  },
+  {
+    "key": "FZO",
+    "code": "ФЗО",
+    "title": "Федеральный закон «Об оружии» № 34-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-ob-oruzhii-no-34-fz.25068/",
+    "profile": "generic",
+    "idPrefix": "fzo",
+    "cacheFile": "fzo_articles.json"
+  },
+  {
+    "key": "FZ88",
+    "code": "ФЗ СК",
+    "title": "Федеральный закон «О Следственном комитете» № 88-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-sledstvennom-komitete-no-88-fz.47199/",
+    "profile": "generic",
+    "idPrefix": "fz88",
+    "cacheFile": "fz88_articles.json"
+  },
+  {
+    "key": "FZ14",
+    "code": "ФЗ-14",
+    "title": "Федеральный закон «О прокуратуре» № 14-ФЗ",
+    "url": "https://forum.rmrp.ru/threads/federalnyj-zakon-o-prokurature-no-14-fz.44125/",
+    "profile": "generic",
+    "idPrefix": "fz14",
+    "cacheFile": "fz14_articles.json"
+  }
+]

@@ -1,0 +1,323 @@
+{
+  "categories": [
+    { "key": "GENERAL", "label": "Общие правила", "forumSlug": "obschie-pravila-proekta.308" },
+    { "key": "CRIME", "label": "Криминальные организации", "forumSlug": "pravila-kriminalnyx-organizacij.309" },
+    { "key": "GOV", "label": "Государственные организации", "forumSlug": "pravila-gosudarstvennyx-organizacij.310" }
+  ],
+  "documents": [
+    {
+      "key": "PROJ",
+      "code": "Правила проекта",
+      "shortCode": "Проект",
+      "title": "Правила проекта",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-proekta.42266/",
+      "profile": "rules",
+      "idPrefix": "proj",
+      "cacheFile": "proj_rules.json",
+      "defaultTab": true
+    },
+    {
+      "key": "ELECTION",
+      "code": "Выборы",
+      "shortCode": "Выборы",
+      "title": "Правила предвыборной агитации и выборов",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-predvybornoj-agitacii-i-vyborov.73228/",
+      "profile": "rules",
+      "idPrefix": "election",
+      "cacheFile": "election_rules.json"
+    },
+    {
+      "key": "BLUEBERRIES",
+      "code": "Blueberries",
+      "shortCode": "Blueberries",
+      "title": "Правила использования маркетплейса «Blueberries»",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-ispolzovanija-marketplejsa-blueberries.123660/",
+      "profile": "rules",
+      "idPrefix": "blueberries",
+      "cacheFile": "blueberries_rules.json",
+      "pointStyle": "simple"
+    },
+    {
+      "key": "UNIONS",
+      "code": "Союзы",
+      "shortCode": "Союзы",
+      "title": "Правила союзов",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-sojuzov.42347/",
+      "profile": "rules",
+      "idPrefix": "unions",
+      "cacheFile": "unions_rules.json"
+    },
+    {
+      "key": "EVENTS",
+      "code": "Мероприятия",
+      "shortCode": "Мероприятия",
+      "title": "Правила мероприятий",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-meroprijatij.42346/",
+      "profile": "rules",
+      "idPrefix": "events",
+      "cacheFile": "events_rules.json"
+    },
+    {
+      "key": "ADMINS",
+      "code": "Админы",
+      "shortCode": "Админы",
+      "title": "Правила и обязанности администраторов",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-i-objazannosti-administratorov.42275/",
+      "profile": "rules",
+      "idPrefix": "admins",
+      "cacheFile": "admins_rules.json"
+    },
+    {
+      "key": "ROB_PLAYERS",
+      "code": "Ограб. игр.",
+      "shortCode": "Ограб. игр.",
+      "title": "Правила ограблений игроков",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-ograblenij-igrokov.42273/",
+      "profile": "rules",
+      "idPrefix": "robplayers",
+      "cacheFile": "robplayers_rules.json"
+    },
+    {
+      "key": "PRISON",
+      "code": "Тюрьма",
+      "shortCode": "Тюрьма",
+      "title": "Правила нападения и обороны федеральной тюрьмы",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-napadenija-i-oborony-federalnoj-tjurmy.42270/",
+      "profile": "rules",
+      "idPrefix": "prison",
+      "cacheFile": "prison_rules.json"
+    },
+    {
+      "key": "ROB_SUPPLY",
+      "code": "Ограб. пост.",
+      "shortCode": "Ограб. пост.",
+      "title": "Правила ограблений и поставок",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-ograblenij-i-postavok.42269/",
+      "profile": "rules",
+      "idPrefix": "robsupply",
+      "cacheFile": "robsupply_rules.json"
+    },
+    {
+      "key": "CRIME_EVENTS",
+      "code": "Крим. события",
+      "shortCode": "Крим. события",
+      "title": "Правила криминальных событий",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-kriminalnyx-sobytij.42267/",
+      "profile": "rules",
+      "idPrefix": "crimeevents",
+      "cacheFile": "crimeevents_rules.json"
+    },
+    {
+      "key": "RAIDS",
+      "code": "Налеты",
+      "shortCode": "Налеты",
+      "title": "Правила налетов",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-naletov.42265/",
+      "profile": "rules",
+      "idPrefix": "raids",
+      "cacheFile": "raids_rules.json"
+    },
+    {
+      "key": "KRAZ",
+      "code": "КрАЗ",
+      "shortCode": "КрАЗ",
+      "title": "Правила войны за КрАЗ",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-vojny-za-kraz.42263/",
+      "profile": "rules",
+      "idPrefix": "kraz",
+      "cacheFile": "kraz_rules.json"
+    },
+    {
+      "key": "KIDNAP",
+      "code": "Похищения",
+      "shortCode": "Похищения",
+      "title": "Правила похищений игроков",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-poxischenij-igrokov.42261/",
+      "profile": "rules",
+      "idPrefix": "kidnap",
+      "cacheFile": "kidnap_rules.json"
+    },
+    {
+      "key": "FAMILIES",
+      "code": "Семьи",
+      "shortCode": "Семьи",
+      "title": "Правила семей",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-semej.42254/",
+      "profile": "rules",
+      "idPrefix": "families",
+      "cacheFile": "families_rules.json"
+    },
+    {
+      "key": "ANTICHEAT",
+      "code": "Античит",
+      "shortCode": "Античит",
+      "title": "Правила проверок на читы",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-proverok-na-chity.42253/",
+      "profile": "rules",
+      "idPrefix": "anticheat",
+      "cacheFile": "anticheat_rules.json",
+      "pointStyle": "simple"
+    },
+    {
+      "key": "LEADERS",
+      "code": "Лидеры",
+      "shortCode": "Лидеры",
+      "title": "Правила и обязанности лидеров",
+      "category": "GENERAL",
+      "url": "https://forum.rmrp.ru/threads/pravila-i-objazannosti-liderov.42252/",
+      "profile": "rules",
+      "idPrefix": "leaders",
+      "cacheFile": "leaders_rules.json"
+    },
+    {
+      "key": "CRIME_MAIN",
+      "code": "Основные крим.",
+      "shortCode": "Крим.",
+      "title": "Основные правила криминальных организаций",
+      "category": "CRIME",
+      "url": "https://forum.rmrp.ru/threads/osnovnye-pravila-kriminalnyx-organizacij.42258/",
+      "profile": "rules",
+      "idPrefix": "crimemain",
+      "cacheFile": "crimemain_rules.json",
+      "defaultTab": true
+    },
+    {
+      "key": "CRIME_TERR",
+      "code": "Титулы крим.",
+      "shortCode": "Титулы",
+      "title": "Титульные территории криминальных организаций",
+      "category": "CRIME",
+      "url": "https://forum.rmrp.ru/threads/titulnye-territorii-kriminalnyx-organizacij.42276/",
+      "profile": "rules",
+      "idPrefix": "crimeterr",
+      "cacheFile": "crimeterr_rules.json"
+    },
+    {
+      "key": "WAR_BIZ",
+      "code": "Война биз.",
+      "shortCode": "БизВар",
+      "title": "Правила войны за бизнес",
+      "category": "CRIME",
+      "url": "https://forum.rmrp.ru/threads/pravila-vojny-za-biznes.42268/",
+      "profile": "rules",
+      "idPrefix": "warbiz",
+      "cacheFile": "warbiz_rules.json"
+    },
+    {
+      "key": "WAR_AIRDROP",
+      "code": "AirDrop",
+      "shortCode": "AirDrop",
+      "title": "Правила войны за AirDrop",
+      "category": "CRIME",
+      "url": "https://forum.rmrp.ru/threads/pravila-vojny-za-airdrop.42264/",
+      "profile": "rules",
+      "idPrefix": "warairdrop",
+      "cacheFile": "warairdrop_rules.json"
+    },
+    {
+      "key": "WAR",
+      "code": "Война",
+      "shortCode": "Война",
+      "title": "Правила войны",
+      "category": "CRIME",
+      "url": "https://forum.rmrp.ru/threads/pravila-vojny.42260/",
+      "profile": "rules",
+      "idPrefix": "war",
+      "cacheFile": "war_rules.json"
+    },
+    {
+      "key": "WAR_TERR",
+      "code": "Война тер.",
+      "shortCode": "Территории",
+      "title": "Правила войны за территории",
+      "category": "CRIME",
+      "url": "https://forum.rmrp.ru/threads/pravila-vojny-za-territorii.42259/",
+      "profile": "rules",
+      "idPrefix": "warterr",
+      "cacheFile": "warterr_rules.json"
+    },
+    {
+      "key": "GOV_MAIN",
+      "code": "Основные гос.",
+      "shortCode": "Гос.",
+      "title": "Основные правила государственных организаций",
+      "category": "GOV",
+      "url": "https://forum.rmrp.ru/threads/osnovnye-pravila-gosudarstvennyx-organizacij.42255/",
+      "profile": "rules",
+      "idPrefix": "govmain",
+      "cacheFile": "govmain_rules.json",
+      "defaultTab": true
+    },
+    {
+      "key": "SK_PROC",
+      "code": "СК/Прок",
+      "shortCode": "СК/Прок",
+      "title": "Правила Следственного комитета и Прокуратуры",
+      "category": "GOV",
+      "url": "https://forum.rmrp.ru/threads/pravila-sledstvennogo-komiteta-i-prokuratury.101487/",
+      "profile": "rules",
+      "idPrefix": "skproc",
+      "cacheFile": "skproc_rules.json"
+    },
+    {
+      "key": "COURTS",
+      "code": "Суды",
+      "shortCode": "Суды",
+      "title": "Правила судебной власти",
+      "category": "GOV",
+      "url": "https://forum.rmrp.ru/threads/pravila-sudebnoj-vlasti.42278/",
+      "profile": "rules",
+      "idPrefix": "courts",
+      "cacheFile": "courts_rules.json"
+    },
+    {
+      "key": "GOV_TERR",
+      "code": "Титулы гос.",
+      "shortCode": "Районы",
+      "title": "Титульные районы государственных организаций",
+      "category": "GOV",
+      "url": "https://forum.rmrp.ru/threads/titulnye-rajony-gosudarstvennyx-organizacij.42277/",
+      "profile": "rules",
+      "idPrefix": "govterr",
+      "cacheFile": "govterr_rules.json",
+      "parseStyle": "districts"
+    },
+    {
+      "key": "GOV_RAIDS",
+      "code": "Рейды",
+      "shortCode": "Рейды",
+      "title": "Правила рейдов",
+      "category": "GOV",
+      "url": "https://forum.rmrp.ru/threads/pravila-rejdov.42257/",
+      "profile": "rules",
+      "idPrefix": "govraids",
+      "cacheFile": "govraids_rules.json"
+    },
+    {
+      "key": "INTERROGATION",
+      "code": "Допросы",
+      "shortCode": "Допросы",
+      "title": "Правила допросов",
+      "category": "GOV",
+      "url": "https://forum.rmrp.ru/threads/pravila-doprosov.42256/",
+      "profile": "rules",
+      "idPrefix": "interrogation",
+      "cacheFile": "interrogation_rules.json"
+    }
+  ]
+}
