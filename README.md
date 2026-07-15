@@ -26,6 +26,16 @@ npx --yes serve site -l 3456
 
 Корпус копируется в `site/data/` из локальной папки `data/` (после парсинга форума).
 
+Структура **разбита на подпапки** (лимит GitHub: не больше 100 файлов за одну загрузку через веб):
+
+| Папка | Содержимое | ~файлов |
+|-------|------------|---------|
+| `site/data/core/` | Реестры, manifest, meta, `all_articles` / `all_rules` | &lt; 15 |
+| `site/data/laws/` | Кэши и индексы законов (`*_articles.json`, `*_index.json`) | &lt; 70 |
+| `site/data/rules/` | Кэши и индексы правил (`*_rules.json`, `*_index.json`) | &lt; 60 |
+
+На GitHub загружайте по очереди: `site/data/core`, затем `site/data/laws`, затем `site/data/rules`.
+
 ```bash
 # Только парсинг (без сборки exe)
 npm run parse:all
@@ -43,7 +53,7 @@ npm run site:publish
 Умный поиск на сайте те же синонимы, что в приложении (`убил` → `убийство`, `dm` → deathmatch и т.д.).
 При `npm run build` / `build:setup` / `build:portable` в конце автоматически вызывается `site:data` — актуальный кэш из `data/` попадает в `site/data/`.
 
-В репозиторий коммитятся файлы `site/data/*.json` (публичный срез для GitHub Pages). Корневой `data/` по-прежнему в `.gitignore`.
+В репозиторий коммитятся файлы `site/data/{core,laws,rules}/` (публичный срез для GitHub Pages). Корневой `data/` по-прежнему в `.gitignore`.
 
 ## Перед публикацией
 

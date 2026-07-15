@@ -43,11 +43,16 @@
 
   const bootstrap = { promise: null };
 
+  function dataUrl(filename, kind) {
+    if (typeof rmrpDataUrl === 'function') return rmrpDataUrl(filename, kind);
+    return `data/${filename}`;
+  }
+
   function startBootstrap() {
     if (!bootstrap.promise) {
       bootstrap.promise = Promise.all([
-        fetchJson('/data/laws.json'),
-        fetchJson('/data/meta.json').catch(() => null),
+        fetchJson(dataUrl('laws.json')),
+        fetchJson(dataUrl('meta.json')).catch(() => null),
       ]);
     }
     return bootstrap.promise;
@@ -176,16 +181,16 @@
       if (isLaws) {
         if (!state.corpusCache.lawsAll) {
           setLoading('Загрузка списка законов…');
-          state.corpusCache.lawsAll = await fetchJson('/data/all_articles_index.json').catch(() =>
-            fetchJson('/data/all_articles.json')
+          state.corpusCache.lawsAll = await fetchJson(dataUrl('all_articles_index.json')).catch(() =>
+            fetchJson(dataUrl('all_articles.json'))
           );
         }
         return state.corpusCache.lawsAll;
       }
       if (!state.corpusCache.rulesAll) {
         setLoading('Загрузка списка правил…');
-        state.corpusCache.rulesAll = await fetchJson('/data/all_rules_index.json').catch(() =>
-          fetchJson('/data/all_rules.json')
+        state.corpusCache.rulesAll = await fetchJson(dataUrl('all_rules_index.json')).catch(() =>
+          fetchJson(dataUrl('all_rules.json'))
         );
       }
       return state.corpusCache.rulesAll;
@@ -197,17 +202,18 @@
     }
 
     const bucket = isLaws ? state.corpusCache.laws : state.corpusCache.rules;
+    const corpusKind = isLaws ? 'law' : 'rule';
     if (!bucket[entry.key]) {
       setLoading(`Загрузка: ${tabLabel(entry)}…`);
       const listFile = listDataFile(entry.cacheFile);
       try {
-        bucket[entry.key] = await fetchJson(`/data/${listFile}`);
+        bucket[entry.key] = await fetchJson(dataUrl(listFile, corpusKind));
       } catch {
         try {
-          bucket[entry.key] = await fetchJson(`/data/${entry.cacheFile}`);
+          bucket[entry.key] = await fetchJson(dataUrl(entry.cacheFile, corpusKind));
         } catch {
           throw new Error(
-            `Нет файла data/${entry.cacheFile}. Выполните: npm run site:data`
+            `Нет файла data/*/${entry.cacheFile}. Выполните: npm run site:data`
           );
         }
       }
@@ -223,14 +229,14 @@
       if (isLaws) {
         if (!state.corpusCache.lawsAllFull) {
           $('laws-status').textContent = 'Загрузка полных текстов… (~6 МБ)';
-          state.corpusCache.lawsAllFull = await fetchJson('/data/all_articles.json');
+          state.corpusCache.lawsAllFull = await fetchJson(dataUrl('all_articles.json'));
         }
         state.fullItems = state.corpusCache.lawsAllFull;
         return state.corpusCache.lawsAllFull;
       }
       if (!state.corpusCache.rulesAllFull) {
         $('laws-status').textContent = 'Загрузка полных текстов правил…';
-        state.corpusCache.rulesAllFull = await fetchJson('/data/all_rules.json');
+        state.corpusCache.rulesAllFull = await fetchJson(dataUrl('all_rules.json'));
       }
       state.fullItems = state.corpusCache.rulesAllFull;
       return state.corpusCache.rulesAllFull;
@@ -243,9 +249,10 @@
     }
 
     const bucket = isLaws ? state.corpusCache.lawsFull : state.corpusCache.rulesFull;
+    const corpusKind = isLaws ? 'law' : 'rule';
     if (!bucket[entry.key]) {
       $('laws-status').textContent = `Загрузка текста: ${tabLabel(entry)}…`;
-      bucket[entry.key] = await fetchJson(`/data/${entry.cacheFile}`);
+      bucket[entry.key] = await fetchJson(dataUrl(entry.cacheFile, corpusKind));
     }
     state.fullItems = bucket[entry.key];
     return bucket[entry.key];
@@ -1222,8 +1229,8 @@
   async function loadRulesRegistry() {
     if (state.rulesRegistry) return state.rulesRegistry;
     const [rules, rulesMeta] = await Promise.all([
-      fetchJson('/data/rules.json'),
-      fetchJson('/data/rules_meta.json').catch(() => null),
+      fetchJson(dataUrl('rules.json')),
+      fetchJson(dataUrl('rules_meta.json')).catch(() => null),
     ]);
     state.rulesRegistry = rules;
     if (rulesMeta && state._manifest) {
@@ -1262,7 +1269,7 @@
         rules: null,
       };
       try {
-        const manifest = await fetchJson('/data/manifest.json');
+        const manifest = await fetchJson(dataUrl('manifest.json'));
         if (manifest) state._manifest = { ...state._manifest, ...manifest };
       } catch {
         /* optional */
