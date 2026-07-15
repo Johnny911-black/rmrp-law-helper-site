@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Законы и правила — RMRP Law Helper</title>
+  <meta name="description" content="Справочник законов и правил RMRP онлайн: поиск по статьям УК, КоАП, ПДД и правилам проекта." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>" />
+  <link rel="stylesheet" href="css/style.css?v=24" />
+</head>
+<body data-page="laws" class="laws-page">
+  <main class="laws-main">
+    <div class="laws-shell container">
+      <header class="laws-top">
+        <div class="laws-top-text">
+          <h1>Законы/Правила RMRP</h1>
+          <p id="laws-meta">Загрузка…</p>
+        </div>
+        <div class="laws-mode" role="tablist" aria-label="Режим">
+          <button type="button" class="laws-mode-btn is-active" data-mode="laws" role="tab" aria-selected="true">Законы</button>
+          <button type="button" class="laws-mode-btn" data-mode="rules" role="tab" aria-selected="false">Правила</button>
+        </div>
+      </header>
+
+      <div class="laws-controls">
+        <label class="laws-search">
+          <span class="visually-hidden">Поиск</span>
+          <input type="search" id="laws-search-input" placeholder="Поиск: «убил», ст. 49, глава…" autocomplete="off" />
+        </label>
+
+        <div class="laws-scope-bar">
+          <button type="button" class="laws-all-btn" id="laws-all-btn" data-tab="ALL">Всё</button>
+
+          <div class="laws-doc-dropdown" id="laws-doc-dropdown">
+            <button type="button" class="laws-doc-trigger" id="laws-doc-trigger" aria-haspopup="listbox" aria-expanded="false">
+              <span id="laws-doc-trigger-label">Выбрать кодекс…</span>
+              <span class="laws-doc-caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="laws-doc-panel" id="laws-doc-panel" hidden>
+              <input type="search" class="laws-doc-filter" id="laws-doc-filter" placeholder="Найти кодекс…" autocomplete="off" />
+              <div class="laws-doc-list" id="laws-doc-list" role="listbox"></div>
+            </div>
+          </div>
+
+          <div class="laws-view-toggle" role="tablist" aria-label="Вид">
+            <button type="button" class="laws-view-btn is-active" data-view="list" id="laws-view-list">Статьи</button>
+            <button type="button" class="laws-view-btn" data-view="fulltext" id="laws-view-fulltext">Полный текст</button>
+          </div>
+
+          <a class="laws-forum-btn" id="laws-forum-btn" href="#" target="_blank" rel="noopener noreferrer" hidden>На форум</a>
+        </div>
+      </div>
+
+      <div class="laws-workspace" id="laws-workspace" data-view="list">
+        <aside class="laws-sidebar" id="laws-sidebar">
+          <div class="laws-sidebar-head">
+            <span id="laws-status">—</span>
+          </div>
+          <div class="laws-list" id="laws-list" tabindex="-1"></div>
+        </aside>
+
+        <section class="laws-reader" id="laws-reader" aria-live="polite">
+          <div class="laws-reader-empty" id="laws-reader-empty">
+            <p>Выберите статью или главу слева</p>
+          </div>
+          <article class="laws-reader-article" id="laws-reader-article" hidden>
+            <header class="laws-reader-head">
+              <p class="laws-reader-kicker" id="laws-reader-kicker"></p>
+              <h2 id="laws-reader-title"></h2>
+              <p class="laws-reader-chapter" id="laws-reader-chapter"></p>
+              <a id="laws-reader-forum" class="laws-reader-forum" href="#" target="_blank" rel="noopener noreferrer" hidden>Открыть тему на форуме →</a>
+            </header>
+            <div class="laws-reader-body" id="laws-reader-body"></div>
+          </article>
+          <div class="laws-chapter-view" id="laws-chapter-view" hidden></div>
+          <div class="laws-fulltext" id="laws-fulltext" hidden></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/smartSearch.js?v=6"></script>
+  <script src="config.js?v=5"></script>
+  <script src="js/layout.js?v=6"></script>
+  <script src="js/normalizeArticleText.js?v=1"></script>
+  <script src="js/laws.js?v=25"></script>
+</body>
+</html>

@@ -38,6 +38,30 @@
     el.href = isConfigured ? releasesUrl : repoUrl;
   });
 
+  const mirrors = cfg.downloadMirrors && typeof cfg.downloadMirrors === 'object'
+    ? cfg.downloadMirrors
+    : {};
+  const mirrorEntries = [
+    { id: 'download-mirror-yandex', url: String(mirrors.yandex || '').trim() },
+    { id: 'download-mirror-google', url: String(mirrors.google || '').trim() },
+  ];
+  const mirrorsBlock = document.getElementById('download-mirrors');
+  let mirrorsVisible = 0;
+  mirrorEntries.forEach(({ id, url }) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (!url) {
+      el.hidden = true;
+      return;
+    }
+    el.href = url;
+    el.hidden = false;
+    mirrorsVisible += 1;
+  });
+  if (mirrorsBlock) {
+    mirrorsBlock.hidden = mirrorsVisible === 0;
+  }
+
   const versionEl = document.getElementById('latest-version');
   const filenameBlock = document.getElementById('download-setup-filename');
   const filenameCode = filenameBlock?.querySelector('code');

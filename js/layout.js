@@ -3,6 +3,7 @@
   const pages = [
     { id: 'home', href: 'index.html', label: 'Главная' },
     { id: 'features', href: 'features.html', label: 'Возможности' },
+    { id: 'laws', href: 'laws.html', label: 'Законы/Правила RMRP' },
     { id: 'updates', href: 'updates.html', label: 'Обновления' },
     { id: 'faq', href: 'faq.html', label: 'FAQ' },
   ];
@@ -64,6 +65,7 @@
         </div>
         <div class="footer-links">
           <a href="features.html">Возможности</a>
+          <a href="laws.html">Законы/Правила RMRP</a>
           <a href="download.html">Скачать</a>
           <a href="updates.html">Обновления</a>
           <a href="faq.html">FAQ</a>

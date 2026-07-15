@@ -26,7 +26,7 @@
               Данные кэшируются локально и обновляются с форума — можно работать офлайн после первой загрузки.
             </p>
             <ul class="feature-list">
-              <li>Fuzzy-поиск: «ст 105», «УПК 186», текст, наказание</li>
+              <li>Fuzzy-поиск: «ст 49», «УПК 186», текст, наказание</li>
               <li>Вкладки документов — закрепите нужные кодексы</li>
               <li>Режим «Полный текст» с подсветкой совпадений</li>
               <li>Карточки статей с наказаниями и картинками</li>
@@ -95,6 +95,7 @@
             <ul class="feature-list">
               <li>Режимы «В чат» (Enter) и «Только вставить»</li>
               <li>Плейсхолдеры: {fio}, {rank}, {org}, {time}, {date}</li>
+              <li>Кодовые слова 3–15 символов — вставка в чат без Enter</li>
               <li>Панель биндов — мини-окно со списком поверх игры</li>
               <li>Экспорт/импорт профиля кодом RMRP-BINDS-v1</li>
               <li>Работает в фоне при скрытом главном окне</li>
@@ -200,7 +201,8 @@
               <li>Ghost на главном окне — только кнопка в шапке</li>
               <li>Ghost на мини-панелях — hotkey + кнопка 👆</li>
               <li>Клавиша чата GTA и hotkeys биндера в настройках</li>
-              <li>6 цветовых тем интерфейса</li>
+              <li>12 цветовых тем интерфейса</li>
+              <li>Настройки по разделам: окно, игра, биндер, обновления</li>
             </ul>
           </div>
           <div class="feature-block-media">
@@ -230,6 +232,51 @@
             </figure>
           </div>
         </article>
+
+        <article class="feature-block reveal" id="updates">
+          <div class="feature-block-text">
+            <span class="tag">Обновления</span>
+            <h2>Автообновление и откат</h2>
+            <p>
+              Приложение само проверяет релизы и предлагает установку.
+              Если после обновления что-то пойдёт не так — можно откатиться
+              на сохранённую резервную копию предыдущей версии.
+            </p>
+            <ul class="feature-list">
+              <li>Проверка обновлений из настроек одним кликом</li>
+              <li>Уведомление о новой версии при запуске</li>
+              <li>Резервные копии установки для отката</li>
+              <li>Зеркала загрузки, если GitHub временно недоступен</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-updates.png" alt="Настройки: вкладка «Обновления» — проверка релизов и откат версии" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-block reverse reveal" id="achievements">
+          <div class="feature-block-text">
+            <span class="tag">Профиль</span>
+            <h2>Достижения и уведомления</h2>
+            <p>
+              Коллекция достижений за освоение разделов: обучение, биндер, законы, смена и другие.
+              При открытии трофея появляется уведомление и короткий звук — как в привычных «стимоподобных» тостах.
+            </p>
+            <ul class="feature-list">
+              <li>Категории достижений и прогресс «получено из N»</li>
+              <li>Интерактивное обучение по этапам</li>
+              <li>Тосты о новых трофеях и напоминаниях доклада</li>
+              <li>Профиль с аватаром и своими полями для биндов</li>
+            </ul>
+          </div>
+          <div class="feature-block-media">
+            <figure class="screenshot-frame">
+              <img src="images/screenshot-achievements.png" alt="Достижения: обучение, прогресс и трофеи приложения" loading="lazy" />
+            </figure>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -242,9 +289,9 @@
     </section>
   </main>
 
-  <script src="config.js"></script>
+  <script src="config.js?v=5"></script>
   <script src="js/layout.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=4"></script>
   <script src="js/lightbox.js"></script>
   <script src="js/animations.js"></script>
 </body>
