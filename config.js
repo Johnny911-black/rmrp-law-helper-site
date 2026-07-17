@@ -4,7 +4,7 @@ window.SITE_CONFIG = {
   githubUser: 'Johnny911-black',
   githubRepo: 'rmrp-law-helper',
   /** Версия приложения на сайте (пока нет Release на GitHub — или как fallback) */
-  appVersion: '1.0.7',
+  appVersion: '1.0.8',
   /** Fallback-имя Setup.exe в GitHub Release */
   setupFileName: 'RMRP-Law-Helper-Setup-1.0.7.exe',
   /**
