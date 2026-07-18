@@ -6,7 +6,7 @@ window.SITE_CONFIG = {
   /** Версия приложения на сайте (пока нет Release на GitHub — или как fallback) */
   appVersion: '1.0.8',
   /** Fallback-имя Setup.exe в GitHub Release */
-  setupFileName: 'RMRP-Law-Helper-Setup-1.0.7.exe',
+  setupFileName: 'RMRP-Law-Helper-Setup-1.0.9.exe',
   /**
    * Постоянные зеркала (сайт НЕ нужно перезаливать при новом релизе).
    *
@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
    * Пустая строка = кнопка скрыта.
    */
   downloadMirrors: {
-    yandex: 'https://disk.yandex.ru/d/Rov5CPGhxwfC2Q',
+    yandex: 'https://disk.yandex.ru/d/2cWgv8Uy_RDxmQ',
     google: 'https://drive.google.com/drive/folders/1iHXi-Vzq5h3iWf2321PUiCIBbpUYuq03?usp=drive_link',
   },
   /** Страница скачивания (для ссылок из приложения при ошибке GitHub) */
