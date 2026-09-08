@@ -76,7 +76,7 @@
     "code": "ФКЗ-2",
     "title": "Федеральный конституционный закон «О Правительстве» №2-ФКЗ",
     "url": "https://forum.rmrp.ru/threads/federalnyj-konstitucionnyj-zakon-o-pravitelstve-no2-fkz.25060/",
-    "profile": "generic",
+    "profile": "textblock",
     "idPrefix": "fkz2",
     "cacheFile": "fkz2_articles.json"
   },

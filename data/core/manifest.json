@@ -1,5 +1,5 @@
 {
-  "copiedAt": "2026-07-15T17:36:44.520Z",
+  "copiedAt": "2026-09-08T09:14:27.882Z",
   "layout": "sharded",
   "shards": [
     "core",
@@ -7,13 +7,13 @@
     "rules"
   ],
   "articles": {
-    "lastUpdated": "2026-07-10T07:51:31.507Z",
-    "parserVersion": 5,
-    "totalArticles": 1190
+    "lastUpdated": "2026-09-08T09:14:26.612Z",
+    "parserVersion": 6,
+    "totalArticles": 1237
   },
   "rules": {
-    "lastUpdated": "2026-07-11T07:54:53.757Z",
+    "lastUpdated": "2026-09-08T09:14:27.512Z",
     "parserVersion": 10,
-    "totalPoints": 889
+    "totalPoints": 913
   }
 }
