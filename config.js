@@ -4,9 +4,9 @@ window.SITE_CONFIG = {
   githubUser: 'Johnny911-black',
   githubRepo: 'rmrp-law-helper',
   /** Версия приложения на сайте (пока нет Release на GitHub — или как fallback) */
-  appVersion: '1.0.8',
+  appVersion: '1.3.0',
   /** Fallback-имя Setup.exe в GitHub Release */
-  setupFileName: 'RMRP-Law-Helper-Setup-1.0.9.exe',
+  setupFileName: 'RMRP-Law-Helper-Setup-1.3.0.exe',
   /**
    * Постоянные зеркала (сайт НЕ нужно перезаливать при новом релизе).
    *
@@ -23,7 +23,7 @@ window.SITE_CONFIG = {
     google: 'https://drive.google.com/drive/folders/1iHXi-Vzq5h3iWf2321PUiCIBbpUYuq03?usp=drive_link',
   },
   /** Страница скачивания (для ссылок из приложения при ошибке GitHub) */
-  downloadPageUrl: 'https://Johnny911-black.github.io/rmrp-law-helper/download.html',
+  downloadPageUrl: 'https://johnny911-black.github.io/rmrp-law-helper-site/download.html',
   /** Горячая клавиша по умолчанию в приложении */
   defaultHotkey: 'F9',
   /** ID видео на YouTube (из ссылки youtube.com/watch?v=XXXXXXXX) */
@@ -33,6 +33,12 @@ window.SITE_CONFIG = {
    * При нормальной работе список берётся из описания Releases автоматически.
    */
   changelogFallback: [
+    {
+      version: '1.3.0',
+      date: '2026-09-08T09:00:00Z',
+      title: 'RMRP Law Helper 1.3.0',
+      body: 'Крупное обновление: скриншоты, галерея, мониторинг FPS, улучшения окон и биндера.\n\n**Скриншоты**\n- Раздел «Скриншоты» в боковом меню\n- Хоткеи области и всего экрана, выбор папки после снимка\n- Галерея по неделям и дням, просмотр с зумом\n\n**Мониторинг**\n- Оверлей FPS / CPU / GPU / RAM поверх игры\n\n**Запись экрана**\n- В этой сборке запись экрана временно отключена (код сохранён)\n\n**Окна и биндер**\n- Плавнее перетаскивание и ресайз окна\n- Исправления биндера и автозапуска',
+    },
     {
       version: '1.0.7',
       date: '2026-07-15T17:30:00Z',
