@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
    * Пустая строка = кнопка скрыта.
    */
   downloadMirrors: {
-    yandex: 'https://disk.yandex.ru/d/L0u5mgNHoxOEMg',
+    yandex: 'https://disk.yandex.ru/d/wHksI2m3o5qUHg',
     google: 'https://drive.google.com/drive/folders/1iHXi-Vzq5h3iWf2321PUiCIBbpUYuq03?usp=drive_link',
   },
   /** Страница скачивания (для ссылок из приложения при ошибке GitHub) */
